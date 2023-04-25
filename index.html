@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Smythe&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/5vRW0MJf4z18C4/3S2zS2d/2tx1op/9Rldk4P4" crossorigin="anonymous">
+    <title>Mobile Ordering App</title>
+</head>
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCBRdjpuVXj4_MHFAs4W4DCYQOYIjb0KF4SA&usqp=CAU" alt="Burger Header">
+    </header>
+    <main class="main">
+        <section class="menu"></section>
+        <section class="your-order hidden">
+            <h2>Your Order</h2>
+            <div class="order-list"></div>
+            <div class="total"></div>
+            <button class="complete-order">Complete Order</button>
+        </section>
+    </main>
+    <div class="modal hidden">
+        <div class="modal-content">
+            <form id="payment-form">
+                <h3 class="modal-title">Enter card details</h3>
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="text" name="cardNumber" placeholder="Enter card number" required>
+                <input type="text" name="cvv" placeholder="Enter CVV" required>
+                <button type="submit">Pay</button>
+            </form>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
